@@ -1,0 +1,80 @@
+2024-07-18T11:54:24.734+07:00  INFO 14536 --- [sercurity] [Test worker] com.example.SercurityApplicationTests    : Starting SercurityApplicationTests using Java 17.0.10 with PID 14536 (started by Admin in C:\Users\Admin\Downloads\Manager_Drink - Copy\Quan_li_do_uong\demo)
+2024-07-18T11:54:24.736+07:00  INFO 14536 --- [sercurity] [Test worker] com.example.SercurityApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2024-07-18T11:54:25.645+07:00  INFO 14536 --- [sercurity] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-18T11:54:25.757+07:00  INFO 14536 --- [sercurity] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 2 JPA repository interfaces.
+2024-07-18T11:54:26.358+07:00  INFO 14536 --- [sercurity] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-18T11:54:26.465+07:00  INFO 14536 --- [sercurity] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-18T11:54:26.519+07:00  INFO 14536 --- [sercurity] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-18T11:54:26.986+07:00  INFO 14536 --- [sercurity] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-18T11:54:27.027+07:00  INFO 14536 --- [sercurity] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-18T11:54:27.374+07:00  INFO 14536 --- [sercurity] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f541e67
+2024-07-18T11:54:27.377+07:00  INFO 14536 --- [sercurity] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-18T11:54:27.433+07:00  WARN 14536 --- [sercurity] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-18T11:54:27.435+07:00  WARN 14536 --- [sercurity] [Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-07-18T11:54:28.563+07:00  INFO 14536 --- [sercurity] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-18T11:54:28.801+07:00  INFO 14536 --- [sercurity] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T11:54:29.424+07:00  WARN 14536 --- [sercurity] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-18T11:54:30.036+07:00  INFO 14536 --- [sercurity] [Test worker] com.example.SercurityApplicationTests    : Started SercurityApplicationTests in 5.657 seconds (process running for 7.149)
+2024-07-18T11:54:30.758+07:00  INFO 14536 --- [sercurity] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T11:54:30.765+07:00  INFO 14536 --- [sercurity] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-18T11:54:30.796+07:00  INFO 14536 --- [sercurity] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-18T11:57:34.579+07:00  INFO 12584 --- [sercurity] [Test worker] com.example.SercurityApplicationTests    : Starting SercurityApplicationTests using Java 17.0.10 with PID 12584 (started by Admin in C:\Users\Admin\Downloads\Manager_Drink - Copy\Quan_li_do_uong\demo)
+2024-07-18T11:57:34.583+07:00  INFO 12584 --- [sercurity] [Test worker] com.example.SercurityApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2024-07-18T11:57:35.492+07:00  INFO 12584 --- [sercurity] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-18T11:57:35.588+07:00  INFO 12584 --- [sercurity] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 2 JPA repository interfaces.
+2024-07-18T11:57:36.202+07:00  INFO 12584 --- [sercurity] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-18T11:57:36.305+07:00  INFO 12584 --- [sercurity] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-18T11:57:36.363+07:00  INFO 12584 --- [sercurity] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-18T11:57:36.853+07:00  INFO 12584 --- [sercurity] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-18T11:57:36.899+07:00  INFO 12584 --- [sercurity] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-18T11:57:37.280+07:00  INFO 12584 --- [sercurity] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ec0ca83
+2024-07-18T11:57:37.283+07:00  INFO 12584 --- [sercurity] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-18T11:57:37.350+07:00  WARN 12584 --- [sercurity] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-18T11:57:37.352+07:00  WARN 12584 --- [sercurity] [Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-07-18T11:57:38.467+07:00  INFO 12584 --- [sercurity] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-18T11:57:38.621+07:00  INFO 12584 --- [sercurity] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T11:57:39.231+07:00  WARN 12584 --- [sercurity] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-18T11:57:39.876+07:00  INFO 12584 --- [sercurity] [Test worker] com.example.SercurityApplicationTests    : Started SercurityApplicationTests in 5.684 seconds (process running for 7.129)
+2024-07-18T11:57:40.686+07:00  INFO 12584 --- [sercurity] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T11:57:40.693+07:00  INFO 12584 --- [sercurity] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-18T11:57:40.731+07:00  INFO 12584 --- [sercurity] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-18T12:00:44.506+07:00  INFO 5028 --- [sercurity] [Test worker] com.example.SercurityApplicationTests    : Starting SercurityApplicationTests using Java 17.0.10 with PID 5028 (started by Admin in C:\Users\Admin\Downloads\Manager_Drink - Copy\Quan_li_do_uong\demo)
+2024-07-18T12:00:44.508+07:00  INFO 5028 --- [sercurity] [Test worker] com.example.SercurityApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2024-07-18T12:00:45.435+07:00  INFO 5028 --- [sercurity] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-18T12:00:45.537+07:00  INFO 5028 --- [sercurity] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 2 JPA repository interfaces.
+2024-07-18T12:00:46.146+07:00  INFO 5028 --- [sercurity] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-18T12:00:46.242+07:00  INFO 5028 --- [sercurity] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-18T12:00:46.313+07:00  INFO 5028 --- [sercurity] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-18T12:00:46.788+07:00  INFO 5028 --- [sercurity] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-18T12:00:46.827+07:00  INFO 5028 --- [sercurity] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-18T12:00:47.174+07:00  INFO 5028 --- [sercurity] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5bde6148
+2024-07-18T12:00:47.177+07:00  INFO 5028 --- [sercurity] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-18T12:00:47.245+07:00  WARN 5028 --- [sercurity] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-18T12:00:47.247+07:00  WARN 5028 --- [sercurity] [Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-07-18T12:00:48.391+07:00  INFO 5028 --- [sercurity] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-18T12:00:48.528+07:00  INFO 5028 --- [sercurity] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T12:00:49.097+07:00  WARN 5028 --- [sercurity] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-18T12:00:49.599+07:00  INFO 5028 --- [sercurity] [Test worker] com.example.SercurityApplicationTests    : Started SercurityApplicationTests in 5.457 seconds (process running for 6.941)
+2024-07-18T12:00:50.602+07:00  INFO 5028 --- [sercurity] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T12:00:50.608+07:00  INFO 5028 --- [sercurity] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-18T12:00:50.626+07:00  INFO 5028 --- [sercurity] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-18T12:01:56.481+07:00  INFO 2120 --- [sercurity] [Test worker] com.example.SercurityApplicationTests    : Starting SercurityApplicationTests using Java 17.0.10 with PID 2120 (started by Admin in C:\Users\Admin\Downloads\Manager_Drink - Copy\Quan_li_do_uong\demo)
+2024-07-18T12:01:56.483+07:00  INFO 2120 --- [sercurity] [Test worker] com.example.SercurityApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2024-07-18T12:01:57.467+07:00  INFO 2120 --- [sercurity] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-18T12:01:57.578+07:00  INFO 2120 --- [sercurity] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 2 JPA repository interfaces.
+2024-07-18T12:01:58.646+07:00  INFO 2120 --- [sercurity] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-18T12:01:58.770+07:00  INFO 2120 --- [sercurity] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-18T12:01:58.831+07:00  INFO 2120 --- [sercurity] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-18T12:01:59.309+07:00  INFO 2120 --- [sercurity] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-18T12:01:59.349+07:00  INFO 2120 --- [sercurity] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-18T12:01:59.767+07:00  INFO 2120 --- [sercurity] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e706aa
+2024-07-18T12:01:59.770+07:00  INFO 2120 --- [sercurity] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-18T12:01:59.833+07:00  WARN 2120 --- [sercurity] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-18T12:01:59.834+07:00  WARN 2120 --- [sercurity] [Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-07-18T12:02:00.862+07:00  INFO 2120 --- [sercurity] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-18T12:02:00.987+07:00  INFO 2120 --- [sercurity] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T12:02:01.538+07:00  WARN 2120 --- [sercurity] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-18T12:02:02.052+07:00  INFO 2120 --- [sercurity] [Test worker] com.example.SercurityApplicationTests    : Started SercurityApplicationTests in 5.946 seconds (process running for 7.435)
+2024-07-18T12:02:03.403+07:00  INFO 2120 --- [sercurity] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T12:02:03.406+07:00  INFO 2120 --- [sercurity] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-18T12:02:03.420+07:00  INFO 2120 --- [sercurity] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
