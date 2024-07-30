@@ -1,11 +1,9 @@
 package com.example.demo.hybrid.entity;
 
 import com.example.demo.hybrid.until.constant.CommonConstant;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -20,29 +18,25 @@ public class TransactionHistoryEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Setter(AccessLevel.NONE)
     private Long id;
 
     @Column(columnDefinition = CommonConstant.LONG_TEXT)
     private String transactionId;
 
-    @Column(columnDefinition = CommonConstant.VARCHAR_10)
+
+    @Column(columnDefinition = CommonConstant.LONG_TEXT)
     private String account;
 
-    @Column(columnDefinition = CommonConstant.VARCHAR_10)
-    private BigDecimal inDebt;
+    @Column(columnDefinition = CommonConstant.LONG_TEXT)
+    private Long inDebt;
 
-    @Column(columnDefinition = CommonConstant.VARCHAR_10)
-    private BigDecimal have;
+    @Column(columnDefinition = CommonConstant.LONG_TEXT)
+    private Long have;
 
+    @JsonFormat(pattern = CommonConstant.DATE_FORMAT)
     private LocalDate time;
 
-    @Column(columnDefinition =CommonConstant.LONG_TEXT)
+    @Column(columnDefinition = CommonConstant.LONG_TEXT)
     private String encryptedAESKey;
-
-    @Column(columnDefinition = CommonConstant.LONG_TEXT)
-    private String publicKeyPath;
-
-    @Column(columnDefinition = CommonConstant.LONG_TEXT)
-    private String privateKeyPath;
-
 }

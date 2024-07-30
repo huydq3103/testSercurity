@@ -24,5 +24,7 @@ public class CommonConstant {
 
     public static final String DEFAULT_FOLDER = "logs";
 
+    public static final String PARAM_ENCRYPTED_TRANSACTION_ID = "encryptedTransactionId";
+
 
 }

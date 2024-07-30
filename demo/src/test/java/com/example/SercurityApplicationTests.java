@@ -1,49 +1,73 @@
 package com.example;
 
-import com.example.demo.hybrid.entity.TransactionHistoryEntity;
-import com.example.demo.hybrid.repository.TransactionHistoryRepository;
-import com.example.demo.hybrid.service.iplm.TransactionServiceImpl;
-import org.junit.jupiter.api.BeforeEach;
+import com.example.demo.hybrid.until.encryptions.EncryptionUtil;
+import com.example.demo.hybrid.until.validate.ValidationUtils;
 import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
-import org.springframework.boot.test.context.SpringBootTest;
 
-import java.math.BigDecimal;
+import javax.crypto.KeyGenerator;
+import javax.crypto.SecretKey;
 
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.*;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.InvalidPathException;
+import java.nio.file.Path;
+import java.security.KeyPairGenerator;
+import java.security.NoSuchAlgorithmException;
+import java.security.PublicKey;
 
-@SpringBootTest
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 public class SercurityApplicationTests {
+    private static final EncryptionUtil encryptionUtil = new EncryptionUtil();
 
-    @Mock
-    private TransactionHistoryRepository transactionHistoryRepository;
 
-    @InjectMocks
-    private TransactionServiceImpl transactionService;
-
-    @BeforeEach
-    public void setup() {
-        MockitoAnnotations.openMocks(this);
+    @Test
+    void testLoadPublicKeyWithInvalidPath() {
+        assertThrows(InvalidPathException.class, () -> encryptionUtil.loadPublicKey("invalid/path/to/key"));
     }
 
     @Test
-    public void testSaveTransaction() {
-        try {
-            String transactionId = "TXN123456789";
-            String sourceAccount = "1234567890";
-            String destinationAccount = "0987654321";
-
-            // Invoke the method to test
-            transactionService.saveTransaction(transactionId, sourceAccount, destinationAccount);
-
-            // Verify that the save method was called twice (for source and destination accounts)
-            verify(transactionHistoryRepository, times(2)).save(any(TransactionHistoryEntity.class));
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    void testLoadPublicKeyWithNonExistentFile() {
+        assertThrows(IOException.class, () -> encryptionUtil.loadPublicKey("/path/to/nonexistent/file.pub"));
     }
+
+    @Test
+    void testLoadPublicKeyWithInvalidContent() throws IOException {
+        // Tạo một file tạm với nội dung không hợp lệ
+        Path tempFile = Files.createTempFile("invalid", ".pub");
+        Files.write(tempFile, "invalid content".getBytes());
+
+        assertThrows(IllegalArgumentException.class, () -> encryptionUtil.loadPublicKey(tempFile.toString()));
+
+        Files.delete(tempFile);
+    }
+
+
+    @Test
+    void testLoadPrivateKeyWithInvalidPath() {
+        assertThrows(InvalidPathException.class, () -> encryptionUtil.loadPrivateKey("invalid/path/to/key"));
+    }
+
+    @Test
+    void testLoadPrivateKeyWithNonExistentFile() {
+        assertThrows(IOException.class, () -> encryptionUtil.loadPrivateKey("/path/to/nonexistent/file.pem"));
+    }
+
+
+
+    @Test
+    void testGenerateKeyPathNullEmailOrId() {
+        assertThrows(IllegalArgumentException.class, () -> EncryptionUtil.generateKeyPath(null, "public"));
+    }
+
+    @Test
+    void testGenerateKeyPathEmptyEmailOrId() {
+        assertThrows(IllegalArgumentException.class, () -> EncryptionUtil.generateKeyPath("", "private"));
+    }
+
+    @Test
+    void testGenerateKeyPathNullKeyType() {
+        assertThrows(IllegalArgumentException.class, () -> EncryptionUtil.generateKeyPath("test@example.com", null));
+    }
+
 }

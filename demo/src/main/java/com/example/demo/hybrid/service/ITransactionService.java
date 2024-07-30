@@ -1,12 +1,15 @@
 package com.example.demo.hybrid.service;
 
+import com.example.demo.hybrid.dto.TransactionDTO;
 import com.example.demo.hybrid.entity.TransactionHistoryEntity;
-import com.example.demo.hybrid.entity.UsersEntity;
 
-import java.math.BigDecimal;
+import java.util.List;
+import java.util.Optional;
 
 public interface ITransactionService {
 
-    void saveTransaction(String transactionId, String sourceAccount, String destinationAccount) throws Exception;
+     void saveTransaction(String encryptedTransactionId, String encryptedSourceAccount,
+                                String encryptedDestinationAccount, String amount, String encryptedTime) throws Exception;
 
+     List<TransactionDTO> getTransaction(String encryptedKeyWords, String publicKeyContent);
 }

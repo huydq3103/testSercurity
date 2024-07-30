@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
+import java.util.Objects;
 
 @RestController
 @RequestMapping("/users")
@@ -30,13 +31,20 @@ public class UserController {
 
     @PostMapping("/get-user")
     public ResponseEntity<UsersEntity> getUser(@RequestBody Map<String, String> requestData) {
-        Long userId = Long.parseLong(requestData.get("userId")); // Assuming userId is passed from FE
-        String publicKeyBase64 = requestData.get("publicKeyBase64");
 
-        if (publicKeyBase64 == null || publicKeyBase64.isEmpty()) {
+        if (Objects.isNull(requestData.get("userId")) || requestData.get("userId").isEmpty() ) {
             // Handle case where publicKeyBase64 is missing or empty
             return ResponseEntity.badRequest().build();
         }
+
+        if (Objects.isNull(requestData.get("publicKeyBase64")) || requestData.get("publicKeyBase64").isEmpty() ) {
+            // Handle case where publicKeyBase64 is missing or empty
+            return ResponseEntity.badRequest().build();
+        }
+
+        Long userId = Long.parseLong(requestData.get("userId")); // Assuming userId is passed from FE
+        String publicKeyBase64 = requestData.get("publicKeyBase64");
+
 
         try {
             UsersEntity user = userService.getUser(userId, publicKeyBase64);

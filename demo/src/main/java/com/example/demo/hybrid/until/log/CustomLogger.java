@@ -22,8 +22,8 @@ public class CustomLogger {
         String maskedDestinationAccount = maskSensitiveInfo(destinationAccount);
 
         MDC.put(LogConstant.LOG_TRANSACTION_ID, maskedTransactionId);
-        MDC.put("SourceAccount", maskedSourceAccount);
-        MDC.put("DestinationAccount", maskedDestinationAccount);
+        MDC.put(LogConstant.LOG_ACCOUNT, maskedSourceAccount);
+        MDC.put(LogConstant.LOG_DESTINATION_ACCOUNT, maskedDestinationAccount);
 
         log.info("Saving transaction: TransactionID={}, SourceAccount={}, DestinationAccount={}",
                 maskedTransactionId, maskedSourceAccount, maskedDestinationAccount);
@@ -31,22 +31,6 @@ public class CustomLogger {
         MDC.clear();
     }
 
-    /**
-     * Logs an exception with masked sensitive information.
-     *
-     * @param e         The exception.
-     * @param parameters Sensitive parameters to mask.
-     */
-    public static void logException(Exception e, String... parameters) {
-        String[] maskedParams = new String[parameters.length];
-        for (int i = 0; i < parameters.length; i++) {
-            maskedParams[i] = maskSensitiveInfo(parameters[i]);
-        }
-
-        MDC.put("ExceptionParams", String.join(",", maskedParams));
-        log.error("Exception occurred", e);
-        MDC.clear();
-    }
 
     /**
      * Masks sensitive information by replacing with '?'.
